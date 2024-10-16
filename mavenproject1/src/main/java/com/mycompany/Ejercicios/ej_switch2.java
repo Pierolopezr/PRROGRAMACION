@@ -10,17 +10,24 @@ import java.util.Scanner;
  */
 public class ej_switch2 {
     public static void main(String[] args) {
-        String numero, uni, dec;
+
+
+        // declaro las variables en formato int para introducir números
         int decenas, unidades;
+        // hago la pregunta
         System.out.println("Dame las decenas: ");
+        // defino al nuevo scanner
         Scanner op;
         op = new Scanner(System.in);
+        // instroducir numeros por consola
         decenas = op.nextInt() ;
         unidades = op.nextInt();
 
 
 
 
+
+        // discrimina distintas opciones de decenas
 
         switch(decenas) {
             case 0:
@@ -56,6 +63,7 @@ public class ej_switch2 {
                 break;
         }
 
+        //discrimina distintas opciones de unidades
         switch(unidades) {
 
             case 0:
