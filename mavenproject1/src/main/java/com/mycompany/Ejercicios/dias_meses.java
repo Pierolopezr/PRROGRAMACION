@@ -28,7 +28,7 @@ public class dias_meses {
             }
 
         };  // <-- se pone , pq reconoce al int como otra instrucción
-        System.out.println("El mes " + mes + " tiene " + dias + " diaas");
+        System.out.println("El mes " + mes + " tiene " + dias + " dias");
         op.close();
     }
 
