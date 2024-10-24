@@ -9,7 +9,7 @@ public class NotasWhile {
     public static void main (String[] args){
         Scanner op;
         op = new Scanner(System.in);
-        System.out.println("Inserta la nota (-1 to quit)");
+        System.out.println("Insertaa la nota (-1 to quit)");
         double n = op.nextDouble();
         double sum = 0.0;
         double num = 0.0;
