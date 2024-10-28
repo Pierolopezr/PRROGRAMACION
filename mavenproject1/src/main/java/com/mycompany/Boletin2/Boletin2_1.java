@@ -4,7 +4,7 @@
  */
 package com.mycompany.Boletin2;
 
-/**
+/** lado area
  *
  * @author dam
  */
