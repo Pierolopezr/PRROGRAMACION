@@ -57,8 +57,37 @@ public class Strings {
         System.out.println("Imprimimos \\ texto\\ \ncon \tcontrabarras \f");
         System.out.println("Tres tristes tigres \r comen \b\b\btrigo"); // el r se va al inicio y las 3 b se van hasta m de comen
 
+
+        // equals
+
+        String cad1 = "ola";
+        String cad2 = new String( "ola");
+        if (cad1.equals ( cad2)) System.out.println("Son iguales"); // compara el contenido del string
+        else System.out.println("Son distintos");
+
+        //---------------------------------------------------------------------------------------------------------------
+        int num [] = {1,2,3,4};
+        int num2 [] = {1,2,3,4};
+
+        if(num==num2) System.out.println("Son iguales");
+        else System.out.println("Son distintos");
+
+        // equalsIgonreCase()  ----> Ignora las mayúsculas
+        if(cad1.equalsIgnoreCase(cad2)) System.out.println("son iguales");
+        else System.out.println("son diferentes");
+
+        // compareTo () ----> Compara alfabéticamente las letras iniciales [posteriormentes las segundas letras y así en caso haya igualdad]
+        // dando como a menor y z mayor.
+        // (0 es iguales) ( > 0 mayor) ( < 0 menor)
+
+        String ave = "Blondrina";
+        String mamifero = "Aorro";
+        if(ave.compareToIgnoreCase(mamifero)>0) System.out.println("Ave mayor " + ave.compareToIgnoreCase(mamifero));
+        else System.out.println("Ave menor " + ave.compareToIgnoreCase(mamifero));
+
+        // Se da un valor al comparar con el compareTo, a las letras iniciales según su número de ubicación en el abecedario.
+        // En este caso B --> 2 y A --> 1, lo cual lo que hace el compareTo es restar 2-1 = 1 y tomar el valor si es > 0  a "ave mayor"
+
+        
     }
-
-
-
 }
